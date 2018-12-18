@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2018 Foundries.io
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+&uart3 {
+	current-speed = <115200>;
+	status = "ok";
+
+	sara-r41xx {
+		compatible = "ublox,sara-r41xx";
+		label = "sara-r41xx";
+		mdm-power-gpios = <&gpioa 2 0>;
+		mdm-reset-gpios = <&gpioc 2 0>;
+		status = "ok";
+	};
+};
